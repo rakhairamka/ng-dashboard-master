@@ -1,0 +1,18 @@
+.login
+    .content
+        form.login-form(name='loginform', *ngIf='showLoginForm', (ngSubmit)='signin(user)')
+        image(src='http://www.innowake.com/innowake-deloitte.gif');
+            h3.form-title.font-green Sign In
+            .alert.alert-danger.display-hide
+                button.close(data-close='alert')
+                span Enter any username and password.
+            .form-group
+                label.control-label.visible-ie8.visible-ie9 Username
+                input.form-control.form-control-solid.placeholder-no-fix(type='text', autocomplete='off', placeholder='Username', name='username', [(ngModel)]='user.username', (keyup.enter)='signin(user)')
+            .form-group
+                label.control-label.visible-ie8.visible-ie9 Password
+                input.form-control.form-control-solid.placeholder-no-fix(type='password', autocomplete='off', placeholder='Password', name='password', [(ngModel)]='user.password', (keyup.enter)='signin(user)')
+            .form-actions
+                button.btn.green.uppercase(type='submit') Login
+    div(*ngFor='let alert of alerts')
+        alert([type]='alert.type', [dismissOnTimeout]='alert.timeout', dismissible='true') {{ alert.msg }}

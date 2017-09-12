@@ -1,0 +1,240 @@
+.sebm-google-map-container {
+    height: 300px;
+}
+
+body {
+    background-color: #7f7d7e !important;
+}
+
+.alert-md-local {
+    background-color: #009688;
+    border-color: #00695C;
+    color: #fff;
+}
+
+.loading-indicator {
+    position: absolute;
+    z-index: 9999;
+    top: 65%;
+    left: 60%;
+    margin-left: -100px;
+    margin-top: -100px;
+    width: 150px;
+    animation: fade 2s ease-in-out infinite;
+}
+
+.spinner-modal {
+    display: inline-block;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, .1);
+}
+
+.rtl-input {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    font-size: 16px;
+}
+
+
+/* Cubic Bezier Transition */
+
+.clearfix {
+    clear: both;
+}
+
+.sub-page-title {
+    text-transform: capitalize;
+}
+
+.page-title {
+    font-size: 28px !important;
+}
+
+.alert {
+    position: fixed !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    width: 30% !important;
+    z-index: 99999 !important;
+}
+
+@media (max-width: 480px) {
+    .alert {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 720px) {
+    .alert {
+        width: 60% !important;
+    }
+}
+
+.alert-danger {
+    background-color: #f75c4f;
+    border-color: #f7584b;
+    color: #ffffff;
+}
+
+.alert-dismissible .close {
+    color: #ffffff !important;
+}
+
+.scroll-to-top>i {
+    color: #364150 !important;
+    font-size: 40px !important;
+}
+
+.table.table-light>tbody>tr>td {
+    color: #333;
+}
+
+.status {
+    padding: 4px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.status-new {
+    background-color: #E91E63;
+}
+
+.status-confirmed {
+    background-color: #659be0;
+}
+
+.status-assigned {
+    background-color: #8e44ad;
+}
+
+.status-paid {
+    background-color: #36c6d3;
+}
+
+.status-cancelled {
+    background-color: #ed6b75;
+}
+
+.spinning-preloader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: -webkit-linear-gradient(top, #fff 0, #f2f2f2 100%) #f2f2f2;
+    background: linear-gradient(to bottom, #fff 0, #f2f2f2 100%) #f2f2f2;
+    opacity: 0.6;
+    -webkit-transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.spinning-preloader-container.complete {
+    opacity: 0;
+    display: none;
+}
+
+.spinning-preloader-elements {
+    opacity: 0;
+}
+
+hr {
+    border-top: 1px solid #ccc !important;
+}
+
+.showbox {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5%;
+}
+
+.loader {
+    margin: 0 auto;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.loader:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+
+.circular {
+    animation: rotate 2s linear infinite;
+    height: 100%;
+    transform-origin: center center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.path {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+    stroke-linecap: round;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
+    }
+    100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
+    }
+}
+
+@keyframes color {
+    100%,
+    0% {
+        stroke: #0057e7;
+    }
+    40% {
+        stroke: #0057e7;
+    }
+    66% {
+        stroke: #0057e7;
+    }
+    80%,
+    90% {
+        stroke: #0057e7;
+    }
+}

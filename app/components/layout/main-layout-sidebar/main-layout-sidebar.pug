@@ -1,0 +1,36 @@
+.page-sidebar.navbar-collapse.collapse
+    ul.page-sidebar-menu(data-keep-expanded='false', data-auto-scroll='true', data-slide-speed='200')
+        li.start.nav-item(routerLinkActive='active')
+            a( href='javascript:;')
+                i.icon-user
+                span.title Manage My License
+                span.selected
+        //- li.start.nav-item(routerLinkActive='active')
+        //-     a(href='javascript:')
+        //-         i.icon-user
+        //-         span.title Request License for Deloitte Hardware
+        //-         span.selected
+        li.nav-item(routerLinkActive='active')
+            a.nav-link.nav-toggle(href='javascript:')
+                i.icon-user
+                span.title Developer License
+                span.arrow
+                span.selected
+            ul.sub-menu
+                li(routerLinkActive='active')
+                    a(href='javascript:;')  Request License for Deloitte Hardware
+                    span.selected
+                li(routerLinkActive='active')
+                    a(href='javascript:;')  Request License for Third Party Hardware
+                    span.selected
+                li(routerLinkActive='active')
+                    a(href='javascript:;')  Create customer license
+                    span.selected
+                li(routerLinkActive='active')
+                    a(href='javascript:;')  Create a developer license
+                    span.selected
+        li.start.nav-item(routerLinkActive='active')
+            a(href='javascript:;')
+                i.icon-user
+                span.title Manage customers / patners
+                span.selected

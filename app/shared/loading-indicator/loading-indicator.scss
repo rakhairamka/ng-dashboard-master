@@ -1,0 +1,21 @@
+.loading-indicator {
+    position: absolute;
+    z-index: 9999;
+    top: 60%;
+    left: 60%;
+    margin-left: -100px;
+    margin-top: -100px;
+    width: 150px;
+    animation: fade 2s ease-in-out infinite;
+}
+
+.spinner-modal {
+    display: inline-block;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, .1);
+}

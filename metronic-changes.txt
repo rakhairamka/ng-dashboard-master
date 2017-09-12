@@ -1,0 +1,18 @@
+assets and the spa is in the same directory
+File d:\My Repository\Dev\Perge\spa\assets\global\scripts\app.js
+  
+    var assetsPath = 'assets/';
+	
+	isAngularJsApp: function() {
+            //return (typeof angular == 'undefined') ? false : true;
+            return true;
+        },
+
+
+	if (!App.isAngularJsApp()) {
+        jQuery(document).ready(function () {
+            App.init(); // init metronic core componets
+        });
+    }
+
+**********************************************************************
